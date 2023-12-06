@@ -19,7 +19,7 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - run: docker build -t ghcr.io/raewda/py-app2 ./py-app/
+      - run: docker build -t ghcr.io/raewda/py-app2 ./python-app/
       - run: docker push ghcr.io/raewda/py-app2
   deploy:
     runs-on: ubuntu-latest
