@@ -23,7 +23,7 @@ jobs:
       - run: docker push ghcr.io/raewda/py-app2
       - run: docker build -t ghcr.io/raewda/node-app2 ./node-app/
       - run: docker push ghcr.io/raewda/node-app2
-      - run: ssh -o "StrictHostKeyChecking no" 'glindaqu-zenspace-7vw6tohwmt2#Gucv_lSzJ8meF8vTbv3of_Hj5HQ1bs3J@glindaqu-zenspace-7vw6tohwmt2.ssh.ws-eu106.gitpod.io' "cd ~ && docker compose pull && docker compose up -d"
+      - run: ssh -o "StrictHostKeyChecking no" 'gglindaqu-zenspace-7vw6tohwmt2#Gucv_lSzJ8meF8vTbv3of_Hj5HQ1bs3J@glindaqu-zenspace-7vw6tohwmt2.ssh.ws-eu106.gitpod.io' "cd ~ && docker compose pull && docker compose up -d"
   
   notify-success: 
     runs-on: ubuntu-latest 
