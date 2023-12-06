@@ -1,1 +1,1 @@
-print("hello, Docker!")
+print("hello, Docker-compose!")
